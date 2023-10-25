@@ -4,10 +4,22 @@
 		"mainnet": "access.mainnet.nodes.onflow.org:9000",
 		"testnet": "access.devnet.nodes.onflow.org:9000"
 	},
+	"contracts": {
+		"RPlace": {
+			"source": "./cadence/contracts/RPlace.cdc"
+		}
+	},
 	"accounts": {
 		"emulator-account": {
 			"address": "f8d6e0586b0a20c7",
 			"key": "dde6d5a3a1492e2f5d922c89bce40170466038ae12b6f062dada73ca851f8fa9"
+		}
+	},
+	"deployments": {
+		"emulator": {
+			"emulator-account": [
+				"RPlace"
+			]
 		}
 	}
 }
